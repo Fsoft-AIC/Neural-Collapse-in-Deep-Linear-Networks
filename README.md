@@ -3,7 +3,7 @@
 This is the code for the [paper](https://arxiv.org/abs/2301.00437) "Neural Collapse in Deep Linear Networks: From Balanced to Imbalanced Data".
 
 International Conference on Machine Learning (ICML), 2023
-
+## Experiments
 ***Balanced data***\
 Multilayer perceptron experiment\
 args: --depth_linear in [1, 3, 6, 9]; --width in [512, 1028, 2048]; --no-bias for bias-free (leave empty for last-layer bias )
