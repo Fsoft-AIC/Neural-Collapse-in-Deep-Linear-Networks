@@ -1,8 +1,6 @@
-# Neural Collapse in Deep Linear Networks:
-From Balanced to Imbalanced Data
+# Neural Collapse in Deep Linear Networks: From Balanced to Imbalanced Data
 
-This is the code for the [paper](https://arxiv.org/abs/2301.00437) "Neural Collapse in Deep Linear Networks:
-From Balanced to Imbalanced Data".
+This is the code for the [paper](https://arxiv.org/abs/2301.00437) "Neural Collapse in Deep Linear Networks: From Balanced to Imbalanced Data".
 
 International Conference on Machine Learning (ICML), 2023
 
