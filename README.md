@@ -49,7 +49,7 @@ For technical details and full experimental results, please check [our paper](ht
 ```
 @article{dang2023neural,
   title={Neural Collapse in Deep Linear Network: From Balanced to Imbalanced Data},
-  author={Dang, Hien and Nguyen, Tan and Tran, Tho and Tran, Hung and Ho, Nhat},
+  author={Hien Dang and Tho Tran and Stanley Osher and Hung Tran-The and Nhat Ho and Tan Nguyen},
   journal={arXiv preprint arXiv:2301.00437},
   year={2023}
 }
