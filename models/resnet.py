@@ -83,10 +83,13 @@ class ResNet(nn.Module):
         self.layer3 = self._make_layer(block, 256, num_blocks[2], stride=2)
         self.layer4 = self._make_layer(block, 512, num_blocks[3], stride=2)
         self.batch_norm = nn.BatchNorm1d(num_features=512*block.expansion)
-        fc = [nn.Linear(512*block.expansion, hidden, bias = False)]
-        for i in range(depth_linear-2):
-            fc += [nn.Linear(hidden, hidden, bias = False)]
-        fc += [nn.Linear(hidden, num_classes, bias = fc_bias)]
+        if depth_linear > 1:
+            fc = [nn.Linear(512*block.expansion, hidden, bias = False)]
+            for i in range(depth_linear-2):
+                fc += [nn.Linear(hidden, hidden, bias = False)]
+            fc += [nn.Linear(hidden, num_classes, bias = fc_bias)]
+        else:
+            fc = [nn.Linear(512*block.expansion, num_classes, bias = fc_bias)]
         self.fc = nn.Sequential(*fc)
 
     def _make_layer(self, block, planes, num_blocks, stride):
